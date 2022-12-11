@@ -1,0 +1,175 @@
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:'Poppins', sans-serif;
+}
+:root{
+    --color-white: #fff;
+    --color-gray-light: #c3c4c5;
+    --color-gray-lighter: #d1d1d1;
+    --color-gray-intensive: #6b727a;
+    --color-red-medium:#ed8a8b;
+    --color-green-light: #49d0b0;
+}
+
+.main-header{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-menu{
+    background-color: var(--color-red-medium);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 15vmin;
+    width: 90%;
+    padding: 0 0.5em;
+}
+.main-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+    padding-left: 2rem;
+}
+.main-logo__img{
+    width: 50px;
+    object-fit: contain;
+}
+.main-logo__text{
+    font-size: 1.6rem;
+    margin: 0.5em;
+    color: var(--color-white);
+    text-transform: uppercase;
+}
+
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.card-pokemon{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; 
+    border-radius: 10px;
+    display: flex;
+}
+.card-pokemon .card-top{
+    padding: 30px 40px 0;
+}
+.card-pokemon .name{
+    margin-bottom: 5px;
+}
+.card-pokemon .type{
+    font-size:12px;
+    opacity: 0.7;
+    border-radius: 10px;
+    padding: 2px 10px;
+    background-color: var(--color-green-light);
+    box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
+}
+.card-pokemon .details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card-pokemon .card-image{
+    width: 350px;
+    height: 350px;
+    display: flex;
+}
+.card-pokemon img{
+    max-height: 100%;
+}
+.card-pokemon .card-information{
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 30px 50px;
+    margin-top: 50px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.card-pokemon .card-information h3{
+    font-size: 20px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid var(--color-gray-intensive);;
+}
+.card-pokemon .card-information .status,
+.card-pokemon .card-information .skills{
+    padding: 0 10px;
+    width: 180px;
+}
+.card-pokemon .card-information .status ul li,
+.card-pokemon .card-information .skills ul li{
+    border-bottom: 1px solid var(--color-gray-light);
+    padding: 0 0 5px;
+    margin-bottom: 5px;
+    font-size: 15px;
+    list-style: none;
+}
+.thumb-bar{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    padding:1vw 0;
+}
+.thumb-bar img{
+    margin: 0 0.5vw;
+    text-align: center;
+    vertical-align: center;
+    width: 9.5rem;
+    height: 9.5rem;
+    padding: 2vw;
+    border-radius: 3px;
+    border: 2px var(--color-gray-intensive) solid; 
+    box-shadow: 4px 4px 0 rgba(0,0,0,.1);
+    cursor: pointer;
+    transition: .3s ease all;
+}
+.thumb-bar img:hover{
+	transform: scale(1.2);
+	transform-origin: center;
+}
+.carousel__container{
+    position: relative;
+    background:skyblue;
+    overflow: hidden; 
+}
+.carousel__back,
+.carousel__next{
+    position: absolute;
+    display:block;
+    width: 60px;
+    height: 100px;
+    border: none;
+    top: calc(50% - 35px);
+    cursor: pointer;
+    line-height: 30px;
+    color: crimson;
+    z-index: 100;
+}
+.carousel__back{
+    left: -10px;
+}
+.carousel__next{
+    right:-10px;
+}
+.carousel__list{
+    overflow: hidden;
+    width: 100%;
+    scroll-behavior: smooth;
+}
+.carousel__indicators{
+    /* display: block;
+    width: 30px;
+    height: 30px;
+    background: crimson; */
+}
